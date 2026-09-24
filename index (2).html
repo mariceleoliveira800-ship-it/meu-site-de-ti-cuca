@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wallyson Victor | Técnico de Informática</title>
+<meta name="description" content="Assistência técnica em informática, manutenção, formatação, reparos, montagem de computadores e redes.">
+<meta name="theme-color" content="#0a1a2c">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Wallyson Victor | Técnico de Informática">
+<meta property="og:description" content="Assistência técnica em informática, manutenção, formatação, reparos, montagem de computadores e redes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1a2c'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffb020'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="preload" href="script.js" as="script">
+<script src="script.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ComputerRepair","name":"Wallyson Victor - Técnico de Informática","telephone":"+5585994539446","email":"vtintonrroso@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Rua Deputado Joel Marques, 540A","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Wallyson Victor, ir ao início"><span class="led" aria-hidden="true"></span>Wallyson Victor</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diagnostico">Diagnóstico</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <h1 id="hero-titulo">Seu computador funcionando como deveria.</h1>
+      <p class="lead">Manutenção, reparos e soluções em informática com atendimento profissional.</p>
+      <div class="actions">
+        <a class="btn btn-primary" data-wa="Olá, Wallyson! Gostaria de solicitar um atendimento." href="https://wa.me/5585994539446">Solicitar atendimento</a>
+        <a class="btn" href="#diagnostico">Diagnosticar problema</a>
+      </div>
+    </div>
+    <div class="boot" aria-hidden="true">
+      <div class="top"><i></i><i></i><i></i></div>
+      <p style="--i:0"><b>&gt;</b> verificando fonte de alimentação</p>
+      <p style="--i:1"><b>&gt;</b> testando memória RAM</p>
+      <p style="--i:2"><b>&gt;</b> lendo HD / SSD</p>
+      <p style="--i:3"><b>&gt;</b> medindo temperatura</p>
+      <p style="--i:4"><b>&gt;</b> testando rede</p>
+      <p style="--i:5" class="ok"><b>&gt;</b> seu equipamento: aguardando diagnóstico<span class="cursor">_</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="section" id="sobre" aria-labelledby="sobre-titulo">
+  <div class="wrap two">
+    <div class="reveal">
+      <h2 id="sobre-titulo">Wallyson Victor, técnico de informática</h2>
+      <p>Meu trabalho envolve manutenção, diagnóstico, reparo e configuração de computadores e redes.</p>
+      <p>Cada atendimento começa por entender o que está acontecendo com o seu equipamento, para indicar o que realmente precisa ser feito.</p>
+    </div>
+    <dl class="facts reveal">
+      <div><dt>Manutenção</dt><dd>Limpeza e cuidados para o equipamento durar mais.</dd></div>
+      <div><dt>Diagnóstico</dt><dd>Análise do problema para encontrar a causa.</dd></div>
+      <div><dt>Reparo</dt><dd>Troca de peças e conserto de placas.</dd></div>
+      <div><dt>Configuração</dt><dd>Sistemas, softwares e redes prontos para uso.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS (cards gerados pelo script.js) ============ -->
+<section class="section" id="servicos" aria-labelledby="serv-titulo">
+  <div class="wrap">
+    <h2 id="serv-titulo">Serviços</h2>
+    <p>Escolha o serviço e fale direto comigo pelo WhatsApp.</p>
+    <div class="grid" id="services-grid"></div>
+    <noscript><p>Ative o JavaScript para ver os serviços ou chame no <a href="https://wa.me/5585994539446">WhatsApp</a>.</p></noscript>
+  </div>
+</section>
+
+<!-- ============ DIAGNÓSTICO ============ -->
+<section class="section" id="diagnostico" aria-labelledby="diag-titulo">
+  <div class="wrap narrow">
+    <h2 id="diag-titulo">Diagnóstico de Computador</h2>
+    <p>Descreva o problema e receba uma análise preliminar com possíveis causas e uma estimativa inicial.</p>
+    <form class="card" id="diag-form" novalidate>
+      <div class="fields">
+        <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required><p class="err" data-err="nome" aria-live="polite"></p></div>
+        <div class="field"><label for="whatsapp">WhatsApp</label><input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(85) 90000-0000" required><p class="err" data-err="whatsapp" aria-live="polite"></p></div>
+        <div class="field"><label for="tipo">Tipo de equipamento</label>
+          <select id="tipo" name="tipo" required><option value="">Selecione</option><option>Notebook</option><option>Computador (desktop)</option><option>All-in-one</option><option>Outro</option></select>
+          <p class="err" data-err="tipo" aria-live="polite"></p></div>
+        <div class="field"><label for="marca">Marca</label><input id="marca" name="marca" placeholder="Ex.: Dell, Lenovo, Positivo"></div>
+        <div class="field"><label for="modelo">Modelo</label><input id="modelo" name="modelo"></div>
+        <div class="field"><label for="problema">Problema apresentado</label>
+          <select id="problema" name="problema" required></select>
+          <p class="err" data-err="problema" aria-live="polite"></p></div>
+        <div class="field"><label for="quando">Quando o problema começou</label><input id="quando" name="inicio" placeholder="Ex.: há 3 dias, depois de uma queda de energia"></div>
+        <fieldset class="field"><legend>O computador liga?</legend>
+          <div class="choice"><label><input type="radio" name="liga" value="Sim"> Sim</label><label><input type="radio" name="liga" value="Não"> Não</label></div>
+          <p class="err" data-err="liga" aria-live="polite"></p></fieldset>
+        <fieldset class="field"><legend>O problema acontece sempre?</legend>
+          <div class="choice"><label><input type="radio" name="sempre" value="Sim"> Sim</label><label><input type="radio" name="sempre" value="Não"> Não</label></div>
+          <p class="err" data-err="sempre" aria-live="polite"></p></fieldset>
+        <div class="field full"><label for="obs">Observações adicionais</label><textarea id="obs" name="obs" rows="3"></textarea></div>
+      </div>
+      <button class="btn btn-primary" type="submit">Ver diagnóstico preliminar</button>
+    </form>
+
+    <div class="result" id="diag-result" tabindex="-1" hidden>
+      <h3>Diagnóstico preliminar</h3>
+      <p><strong>Problema informado:</strong> <span id="r-problema"></span></p>
+      <p><strong>Possíveis causas:</strong></p>
+      <ul id="r-causas"></ul>
+      <ul id="r-notas" class="notes"></ul>
+      <p><strong>Estimativa inicial</strong> (valor sujeito à avaliação técnica):</p>
+      <div class="scroll"><table class="est"><tbody id="r-est"></tbody></table></div>
+      <p class="note">Diagnóstico preliminar baseado nas informações fornecidas. O diagnóstico definitivo depende de avaliação técnica.</p>
+      <a class="btn btn-primary" id="r-wa" target="_blank" rel="noopener" href="https://wa.me/5585994539446">Enviar diagnóstico pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS (exemplos demonstrativos — substitua por reais) ============ -->
+<section class="section" id="depoimentos" aria-labelledby="dep-titulo">
+  <div class="wrap">
+    <h2 id="dep-titulo">Depoimentos</h2>
+    <p>Os textos abaixo são exemplos demonstrativos e serão substituídos por avaliações reais de clientes.</p>
+    <div class="grid" id="testimonials">
+      <figure class="card reveal"><span class="tag">Exemplo de depoimento</span>
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>“Atendimento rápido e muito atencioso. O computador voltou a funcionar perfeitamente.”</blockquote>
+        <figcaption>— Cliente demonstrativo</figcaption></figure>
+      <figure class="card reveal"><span class="tag">Exemplo de depoimento</span>
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>“Explicou o problema de forma simples e resolveu o computador.”</blockquote>
+        <figcaption>— Cliente demonstrativo</figcaption></figure>
+      <figure class="card reveal"><span class="tag">Exemplo de depoimento</span>
+        <div class="stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        <blockquote>“Meu notebook estava lento e ficou muito melhor depois da manutenção.”</blockquote>
+        <figcaption>— Cliente demonstrativo</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section" id="contato" aria-labelledby="cont-titulo">
+  <div class="wrap narrow">
+    <h2 id="cont-titulo">Contato</h2>
+    <div class="card reveal">
+      <h3>Wallyson Victor</h3>
+      <p>Técnico de Informática</p>
+      <dl class="contact">
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5585994539446" data-wa="Olá, Wallyson! Gostaria de falar sobre um atendimento.">(85) 99453-9446</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:vtintonrroso@gmail.com">vtintonrroso@gmail.com</a></dd></div>
+        <div><dt>Endereço</dt><dd>Rua Deputado Joel Marques, 540A</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn btn-primary" data-wa="Olá, Wallyson! Gostaria de falar sobre um atendimento." href="https://wa.me/5585994539446">Chamar no WhatsApp</a>
+        <a class="btn" href="mailto:vtintonrroso@gmail.com?subject=Atendimento%20t%C3%A9cnico">Enviar e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="footer">
+  <div class="wrap foot">
+    <div><strong>Wallyson Victor</strong><br>Técnico de Informática</div>
+    <nav aria-label="Links rápidos"><a href="#sobre">Sobre</a> <a href="#servicos">Serviços</a> <a href="#diagnostico">Diagnóstico</a> <a href="#contato">Contato</a></nav>
+    <div><a href="https://wa.me/5585994539446" data-wa="Olá, Wallyson!">WhatsApp: (85) 99453-9446</a><br><a href="mailto:vtintonrroso@gmail.com">vtintonrroso@gmail.com</a><br>Rua Deputado Joel Marques, 540A</div>
+  </div>
+  <p class="copy">© <span id="year">2026</span> Wallyson Victor. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
